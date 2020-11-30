@@ -9,7 +9,7 @@ namespace StarCollege.Models
     {
         public int ID { get; set; }
         [Required]
-        [StringLength(50)]
+        [StringLength(50, MinimumLength=1)]
         [Display(Name = "Last Name")]
         public string LastName { get; set; }
         [Required]

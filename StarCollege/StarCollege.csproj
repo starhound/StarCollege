@@ -144,6 +144,15 @@
     </Compile>
     <Compile Include="Logging\ILogger.cs" />
     <Compile Include="Logging\Logger.cs" />
+    <Compile Include="Migrations\202010260647409_InitialCreate.cs" />
+    <Compile Include="Migrations\202010260647409_InitialCreate.designer.cs">
+      <DependentUpon>202010260647409_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202011300230495_InitialCreate1.cs" />
+    <Compile Include="Migrations\202011300230495_InitialCreate1.designer.cs">
+      <DependentUpon>202011300230495_InitialCreate1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Course.cs" />
     <Compile Include="Models\Enrollment.cs" />
     <Compile Include="Models\Student.cs" />
@@ -309,6 +318,14 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202010260647409_InitialCreate.resx">
+      <DependentUpon>202010260647409_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202011300230495_InitialCreate1.resx">
+      <DependentUpon>202011300230495_InitialCreate1.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
